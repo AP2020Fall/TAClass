@@ -1,1 +1,6 @@
 subjects:
+    introduction to java syntax
+    mutable and immutable objects
+    introduction to regular expression
+    introduction to some common classes:
+    { String, StringBuilder, ArrayList, HashMap}
