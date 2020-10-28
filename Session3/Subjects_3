@@ -1,1 +1,22 @@
 subjects:
+OOP Advanced (Abstraction & Polymorphism)
+
+Shape -- Circle
+	  <-- Rectangle <-- Square
+	  -- ShapeType (Enum)
+
+1- Inheritance (REVIEW)
+2- Public - Private - Protected - Package Access (REVIEW)
+3- Setters - Getters (REVIEW)
+4- ToString Method (REVIEW)
+5- Enums (REVIEW)
+6- ArrayLists (REVIEW)
+
+7- Polymorphism
+8- Abstraction --> Abstract Class - Abstract Methods
+9- Multiple Layer Inheritance
+10- Constructor (REVIEW) --> Default Constructor + Multiple Constructors
+11- Up Casting / Down Casting
+12- Packaging (Clean Code)
+
+Sina Elahimanesh
