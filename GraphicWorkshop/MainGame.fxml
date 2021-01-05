@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?><?import java.util.*?><?import javafx.scene.*?><?import javafx.scene.control.*?><?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?><?import javafx.scene.image.Image?>
+<Pane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="sample.MainGameController"
+          prefHeight="600.0" prefWidth="600.0" fx:id="board">
+    <ImageView>
+        <Image url="@Resources/board.jpg"/>
+    </ImageView>
+    <ImageView layoutX="0" layoutY="540" fx:id="redPiece" onMouseClicked="#playRed">
+        <Image url="@Resources/red.png"/>
+    </ImageView>
+    <ImageView layoutY="540" layoutX="0"  fx:id="bluePiece" onMouseClicked="#playBlue">
+        <Image url="@Resources/blue.png" />
+    </ImageView>
+</Pane>
