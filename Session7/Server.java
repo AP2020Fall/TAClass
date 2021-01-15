@@ -51,9 +51,10 @@ public class Server {
                     if (user != null)
                         System.out.println("Client with username " + user.username + " sent : " + input);
                     else System.out.println("A client sent : " + input);
-                    dataOutputStream.writeUTF(answerClient(input));
+                    String answer = answerClient(input);
+                    dataOutputStream.writeUTF(answer);
                     dataOutputStream.flush();
-                    System.out.println("server answered : " + input);
+                    System.out.println("server answered : " + answer);
                     if (input.equals("end")) {
                         System.out.println("Connection closed!!!");
                         break;
@@ -110,12 +111,12 @@ public class Server {
             if (input.contains("first-number")) {
                 if (user.firstNumber == null)
                     return "first number is null";
-                else input = input.replace("first number", user.firstNumber.toString());
+                else input = input.replace("first-number", user.firstNumber.toString());
             }
             if (input.contains("second-number")) {
                 if (user.secondNumber == null)
                     return "second number is null";
-                else input = input.replace("second number", user.secondNumber.toString());
+                else input = input.replace("second-number", user.secondNumber.toString());
             }
             String answer;
             if (input.equals("print first number"))
